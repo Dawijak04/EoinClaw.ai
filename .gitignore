@@ -1,2 +1,12 @@
-/processed_data
-/dataset/TomJerry
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+
+dataset/TomJerry/
+/processed_data/
+
+*.pt
+*.pth
+
+.env
