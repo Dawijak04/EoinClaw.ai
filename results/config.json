@@ -21,9 +21,11 @@
   ],
   "conditions": [
     "regular",
-    "augmented"
+    "augmented",
+    "augmented_old"
   ],
   "augmentation": "on the fly, training images only: Compose(\n    RandomHorizontalFlip(p=0.5)\n    RandomApply(\n    p=0.8\n    RandomRotation(degrees=[-20.0, 20.0], interpolation=nearest, expand=False, fill=0)\n)\n    RandomApply(\n    p=0.8\n    ColorJitter(brightness=(0.7, 1.3), contrast=(0.7, 1.3), saturation=(0.7, 1.3), hue=(-0.05, 0.05))\n)\n    RandomApply(\n    p=0.5\n    RandomAffine(degrees=[0.0, 0.0], translate=(0.03, 0.03))\n)\n    RandomApply(\n    p=0.2\n    GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 1.0))\n)\n)",
+  "augmentation_old": "on the fly, training images only: Compose(\n    RandomHorizontalFlip(p=0.5)\n    RandomApply(\n    p=0.7\n    RandomRotation(degrees=[-15.0, 15.0], interpolation=nearest, expand=False, fill=0)\n)\n    RandomApply(\n    p=0.7\n    ColorJitter(brightness=(0.8, 1.2), contrast=(0.8, 1.2), saturation=(0.8, 1.2), hue=None)\n)\n)",
   "classes": [
     "jerry",
     "tom",
