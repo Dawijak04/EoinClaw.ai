@@ -1,0 +1,46 @@
+{
+  "experiment": "v2",
+  "training_setup": "M1",
+  "model": "resnet18, ImageNet pretrained (IMAGENET1K_V1), new 4-class output layer",
+  "fine_tuning": "all layers",
+  "loss": "cross-entropy",
+  "optimiser": "AdamW, no weight decay on biases and BatchNorm",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "max_steps": 600,
+  "eval_every": 50,
+  "patience": 4,
+  "checkpoint": "lowest validation loss",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": [
+    "regular",
+    "augmented"
+  ],
+  "classes": [
+    "jerry",
+    "tom",
+    "tom_jerry_0",
+    "tom_jerry_1"
+  ],
+  "normalisation": "ImageNet mean and std",
+  "data": {
+    "source": "processed_data/ from preprocessing.ipynb (seed 42, temporal 25/25/50 split)",
+    "train_images": {
+      "regular": 1369,
+      "augmented": 2738
+    },
+    "val_images": 1370,
+    "test_images": 2739
+  },
+  "parameters": 11178564,
+  "hardware": "CPU only (12 cores, 14GB RAM)",
+  "torch_version": "2.14.1+cpu",
+  "augmentation": "offline, one saved augmented copy per training image (preprocessing.ipynb), training images only. Dawid's updated augmentation: flip p0.5, rotation 20 p0.8, colour jitter 0.3 + hue 0.05 p0.8, translate 0.03 p0.5, blur p0.2"
+}

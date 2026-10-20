@@ -1,4 +1,6 @@
 {
+  "experiment": "v1",
+  "training_setup": "M1",
   "model": "resnet18, ImageNet pretrained (IMAGENET1K_V1), new 4-class output layer",
   "fine_tuning": "all layers",
   "loss": "cross-entropy",
@@ -39,5 +41,6 @@
   },
   "parameters": 11178564,
   "hardware": "CPU only (12 cores, 14GB RAM)",
-  "torch_version": "2.14.1+cpu"
+  "torch_version": "2.14.1+cpu",
+  "augmentation": "offline, one saved augmented copy per training image (preprocessing.ipynb), training images only. Dawid's first augmentation: flip p0.5, rotation 15 p0.7, colour jitter 0.2 p0.7"
 }

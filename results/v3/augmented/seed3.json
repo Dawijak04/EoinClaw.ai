@@ -1,5 +1,5 @@
 {
-  "condition": "augmented_old",
+  "condition": "augmented",
   "seed": 3,
   "best_step": 400,
   "best_val_loss": 1.0434424678774645,
