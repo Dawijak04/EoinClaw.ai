@@ -39,6 +39,8 @@ TomJerry/tom_and_jerry/tom_and_jerry/
 ```
 
 5. Open `preprocessing.ipynb`, select the `.venv` kernel, and choose **Run All**.
+6. Open `training.ipynb`, select the `.venv` kernel, and choose **Run All**.
+7. Open `analysis.ipynb`, select the `.venv` kernel, and choose **Run All**.
 
 ## Notes
 
