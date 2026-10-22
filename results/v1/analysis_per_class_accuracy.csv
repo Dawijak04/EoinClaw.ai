@@ -1,0 +1,9 @@
+experiment,condition,class,n_predictions,correct,accuracy
+v1,regular,jerry,3100,2727,0.8796774193548387
+v1,regular,tom,4825,3676,0.7618652849740932
+v1,regular,tom_jerry_0,3820,1248,0.3267015706806283
+v1,regular,tom_jerry_1,1950,499,0.2558974358974359
+v1,augmented,jerry,3100,2734,0.8819354838709678
+v1,augmented,tom,4825,3959,0.8205181347150259
+v1,augmented,tom_jerry_0,3820,1058,0.2769633507853403
+v1,augmented,tom_jerry_1,1950,481,0.24666666666666667
