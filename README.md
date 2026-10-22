@@ -32,10 +32,10 @@ pip install -r requirements.txt
 
 4. Download the dataset from
    https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
-   and unzip it into a `TomJerry` folder at the repository root, so the images end up at:
+   and unzip it into the `dataset` folder at the repository root, so the images end up at:
 
 ```
-TomJerry/tom_and_jerry/tom_and_jerry/
+dataset/tom_and_jerry/tom_and_jerry/
 ```
 
 5. Open `preprocessing.ipynb`, select the `.venv` kernel, and choose **Run All**.
